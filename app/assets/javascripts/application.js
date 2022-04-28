@@ -17,6 +17,7 @@
 //= require semantic-ui
 //= require_tree .
 
-$(function() {
-    $('.ui.dropdown').dropdown();
-})
+$(document).on('turbolinks:load', function(){ $('.ui.dropdown').dropdown(); });
+// $(function() {
+//     $('.ui.dropdown').dropdown();
+// })
